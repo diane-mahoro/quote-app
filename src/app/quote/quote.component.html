@@ -1,3 +1,11 @@
-<p>
-  quote works!
-</p>
+<div>
+  <h1>Best inspiritional Quote</h1>
+  <hr>
+  <ul>
+    <li *ngFor='let Quote of array'>
+      {{Quote.name}}
+    </li>
+  </ul>
+  <p *ngIf='array.length > 2'>Your goals are too many</p>
+  <app-details [quote]='quote'></app-details>
+</div>

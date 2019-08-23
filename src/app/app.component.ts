@@ -8,9 +8,9 @@ import { from } from 'rxjs';
 })
 export class AppComponent {
   array: Quote[] =[
-    {id:1, name:'Watch finding Nemo'},
-    {id:2,name:'Buy Cookies'},
-    {id:3,name:'Get new Phone Case'},
+    {id:1, name:'Watch finding Nemo', description:'bussiness'},
+    {id:2,name:'Buy Cookies',  description:'bussiness'},
+    {id:3,name:'Get new Phone Case',  description:'bussiness'},
   ];
   title = 'Quote';
 }
