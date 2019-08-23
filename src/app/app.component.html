@@ -21,10 +21,11 @@
   <h1>Best inspiritional Quote</h1>
   <hr>
   <ul>
-      <li *ngFor='let goal of array'>
-        {{Quote.name}}
-      </li>
+    <li *ngFor='let Quote of array'>
+      {{Quote.name}}
+    </li>
   </ul>
+  <p *ngIf='array.length > 5'>Your goals are too many</p>
 </div>
-
 <router-outlet></router-outlet>
+<app-quote></app-quote>
