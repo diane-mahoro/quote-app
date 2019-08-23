@@ -7,10 +7,13 @@ import { Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   array: Quote[] =[
-    {id:1, name:'Watch finding Nemo', description:'lllll'},
-    {id:2,name:'Buy Cookies',  description:'lllll'},
-    {id:3,name:'Get new Phone Case',  description:'lllll'},
-  ];
+  new Quote(1, 'mahoro diane', 'this is about business'),
+  new Quote(1, 'mahoro diane', 'this is about business'),
+  new Quote(1, 'mahoro diane', 'this is about business'),
+  new Quote(1, 'mahoro diane', 'this is about business'),];
+  toggleDetails(index){
+    this.array[index].showDescription = !this.array[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {

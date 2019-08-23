@@ -2,10 +2,16 @@
   <h1>Best inspiritional Quote</h1>
   <hr>
   <ul>
-    <li *ngFor='let Quote of array'>
-      {{Quote.name}}
-    </li>
+    <div *ngFor='let quote of array;let i = index'>
+ <li>{{quote.name}}</li>
+ <button (click)='toggleDetails(i)'>Quote details</button>
+ <app-details *ngIf='quote.showDescription' [quote]='quote'></app-details>
+    </div>
+    <!-- <li *ngFor='let quote of array'>
+      {{quote.name}}
+      <app-details [quote]='quote'></app-details>
+    </li> -->
   </ul>
-  <p *ngIf='array.length > 2'>Your goals are too many</p>
-  <app-details [quote]='quote'></app-details>
+  <!-- <p *ngIf='array.length > 2'>Your goals are too many</p> -->
+
 </div>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Quote} from './quote';
-import { from } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +7,9 @@ import { from } from 'rxjs';
 })
 export class AppComponent {
   array: Quote[] =[
-    {id:1, name:'Watch finding Nemo', description:'bussiness'},
-    {id:2,name:'Buy Cookies',  description:'bussiness'},
-    {id:3,name:'Get new Phone Case',  description:'bussiness'},
+    new Quote(1,'mahoro','business'),
+    new Quote(1,'mahoro','business'),
+    new Quote(1,'mahoro','business')
   ];
   title = 'Quote';
 }
