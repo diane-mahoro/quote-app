@@ -5,9 +5,9 @@
     <div *ngFor='let quote of array;let i = index'>
  <li appStrikethrough>{{quote.description}}</li>
  <button (click)='toggleDetails(i)'>Quote details</button>
- <app-details *ngIf='quote.showDescription' [quote]='quote' (comply)='complete($event,i)'></app-details>
+ <app-details *ngIf='quote.showDescription' [quote]='quote' (comply)='deletequote($event,i)'></app-details>
     </div>
   </ul>
   <!-- <p *ngIf='array.length > 2'>Your goals are too many</p> -->
 
-</div>
+</div> 

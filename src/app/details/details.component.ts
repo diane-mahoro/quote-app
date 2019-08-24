@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 export class DetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() comply = new EventEmitter<boolean>();
-  complete(comp:boolean){
+  quotedelete(comp:boolean){
     this.comply.emit(comp);
   }
   constructor() { }
