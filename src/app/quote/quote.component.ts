@@ -11,6 +11,12 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'Rurangwa Gloria','william',new Date(2019,6,1),'You have got what it takes'),
     new Quote(1,'Ishimwe Norbert','william',new Date(2019,6,1),'Education is the key tosuccess'),
   ];
+  addnewquote(quote){
+    let quotelength = this.array.length;
+    quote.id = quotelength + 1;
+    quote.completedate = new Date(quote.completedate)
+    this.array.push(quote)
+  }
   toggleDetails(index){
     this.array[index].showDescription = !this.array[index].showDescription;
   }

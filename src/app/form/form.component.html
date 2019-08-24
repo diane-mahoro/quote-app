@@ -1,6 +1,6 @@
 <div class="container-fluid">
 <h1>post a quote</h1>
-<form #quoteForm ='ngForm'>
+<form (ngSubmit)='submitquote' #quoteForm ='ngForm'>
   <div class="form-group">
     <label for="name">Name</label>
           <input type="text" required class="form-control" id="name" [(ngModel)]="newquote.name" name="name">
