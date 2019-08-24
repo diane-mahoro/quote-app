@@ -1,9 +1,10 @@
 <div class="container-fluid">
 <h1>post a quote</h1>
-<form>
+<form #quoteForm ='ngForm'>
   <div class="form-group">
     <label for="name">Name</label>
-          <input type="text" required class="form-control" id="name">
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newquote.name" name="name">
+          display{{newquote.name}}
   </div>
   <div class="form-group">
     <label for="name">Author</label>
@@ -17,5 +18,6 @@
     <label for="name">QUOTE</label>
     <textarea class="form-control" id="description" rows="4" required></textarea>
   </div>
+  <button type="submit">POST</button>
 </form>
 </div>
