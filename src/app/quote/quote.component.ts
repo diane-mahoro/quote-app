@@ -7,10 +7,10 @@ import { Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   array: Quote[] =[
-  new Quote(1, 'mahoro diane', 'this is about business'),
-  new Quote(1, 'mahoro diane', 'this is about business'),
-  new Quote(1, 'mahoro diane', 'this is about business'),
-  new Quote(1, 'mahoro diane', 'this is about business'),];
+    new Quote(1,'mahoro Diane','william','If you do not work hard its up to you'),
+    new Quote(2,'Rurangwa Gloria','william','You have got what it takes'),
+    new Quote(1,'Ishimwe Norbert','william','Education is the key tosuccess'),
+  ];
   toggleDetails(index){
     this.array[index].showDescription = !this.array[index].showDescription;
   }
