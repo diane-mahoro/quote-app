@@ -13,10 +13,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <img src="https://thumbs.dreamstime.com/b/ok-emoticon-13969327.jpg" width="80%" height="300px">
+        <img src="https://thumbs.dreamstime.com/b/ok-emoticon-13969327.jpg" width="80%" height=" 300px" style="position:relative; left: 20px;">
       </div>
       <div class="col-md-6">
-        <p style="font-family: 'Sofia';font-size: 22px;">Have you ever looked for the best
+        <p id="first">Have you ever looked for the best
           place to find inspiration quote?
           here is the solution for you.
         </p>
@@ -28,13 +28,13 @@
         <hr>
         <ul>
           <div *ngFor='let quote of array;let i = index'>
-            <li appStrikethrough>{{quote.description}}</li>
-            <button (click)='toggleDetails(i)'>Quote details</button>
+            <li appStrikethrough> " {{quote.description}} "</li>
+            <button (click)='toggleDetails(i)' style="background-color:black; color:white;">Quote details</button>
             <app-details *ngIf='quote.showDescription' [quote]='quote' (comply)='deletequote($event,i)'></app-details>
           </div>
         </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" style=" width: 50%">
         <app-form (addquote)="addnewquote($event)"></app-form>
       </div>
     </div>

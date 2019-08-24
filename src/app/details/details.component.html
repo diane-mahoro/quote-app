@@ -2,5 +2,7 @@
   {{quote.author}}</p>
 <p>it has been posted by {{quote.name}}
 </p>
-<P>Due on {{quote.dueon|dateCount}}</P>
-<button (click)='quotedelete(true)'>Delete the quote</button>
+<P>Due on {{quote.dueon}}</P>
+<button (click)='quotedelete(true)' style="background-color:black; color:white;">Delete the quote</button>
+<button (click)="yes()" style="width:10%">{{a}}<img src="https://image.shutterstock.com/image-illustration/heart-icon-design-like-upvote-600w-1233287899.jpg" width="50%" height="60px" hspace="4"></button>
+<button (click)="no()" style="width:10%">{{b}}<img src="https://image.shutterstock.com/image-illustration/illustration-depicting-internet-downvote-system-600w-1219632991.jpg" width="50%" height="60px"></button>

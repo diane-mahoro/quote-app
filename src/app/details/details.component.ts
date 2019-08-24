@@ -11,6 +11,14 @@ export class DetailsComponent implements OnInit {
   quotedelete(comp:boolean){
     this.comply.emit(comp);
   }
+  a=0;
+  b=0;
+  yes(){
+   this.a =this.a +1;
+  }
+  no(){
+   this.b =this.b+1;
+  }
   constructor() { }
 
   ngOnInit() {

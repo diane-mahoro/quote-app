@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <h1>post a quote</h1>
-  <form (ngSubmit)='submitquote' #goalForm='ngForm'>
+  <form (ngSubmit)='submitquote()' #goalForm='ngForm'>
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name" [(ngModel)]="newquote.name" name="name"  #name='ngModel' required>
@@ -29,6 +29,6 @@
       <p>Quote is required</p>
     </div>
   </div>
-  <button type="submit">POST</button>
+  <button type="submit" style="background-color:black; color:white;">POST</button>
   </form>
 </div>
